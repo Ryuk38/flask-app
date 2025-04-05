@@ -1,12 +1,10 @@
 pipeline {
-    agent {
-        docker { image 'docker:dind' }
-    }
+    agent any
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Ryuk38/flask-app.git'
+                git branch: 'main', url: 'https://github.com/yourusername/flask-app.git'
             }
         }
 
