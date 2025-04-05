@@ -1,7 +1,7 @@
-from flask import flask
-app=Flask(_name_)
+from flask import Flask
+app=Flask(__name__)
 @app.route("/")
 def home():
   return "Hello  from flask app1"
-if _name_=="_main_":
+if __name__=="_main_":
   app.run(host="0.0.0.0",port=5000)
